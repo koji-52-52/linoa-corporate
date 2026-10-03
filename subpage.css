@@ -1,0 +1,35 @@
+/* Shared typography and spacing for lower-level pages only. */
+:root { --subpage-body:1.0625rem; --subpage-copy:1rem; --subpage-section-space:92px; }
+.breadcrumb { font-size:.84rem; }
+.page-kicker,.section-label { font-size:.9rem; letter-spacing:.16em; }
+.page-hero-inner,.company-hero-inner,.cases-hero-inner,.news-hero-inner,.contact-hero-inner,.privacy-hero-inner { min-height:0; padding-top:60px; padding-bottom:54px; }
+.page-hero h1,.company-hero h1,.cases-hero h1,.news-hero h1,.contact-hero h1,.privacy-hero h1 { font-size:clamp(2.5rem,3.2vw,3rem); }
+.page-hero-inner>p:not(.page-kicker),.company-hero p:not(.page-kicker),.cases-hero p:not(.page-kicker),.news-hero p:not(.page-kicker),.contact-hero p:not(.page-kicker),.privacy-hero p:not(.page-kicker) { font-size:1.125rem; line-height:1.8; }
+.content-section { padding-top:var(--subpage-section-space); padding-bottom:var(--subpage-section-space); }
+.company-section { padding-top:92px; padding-bottom:92px; }
+.case-list-section { padding-top:92px; padding-bottom:96px; }
+.news-list-section { padding-top:88px; padding-bottom:96px; }
+.contact-main { padding-top:90px; padding-bottom:98px; }
+.policy-inner { padding-top:90px; padding-bottom:100px; }
+.service-detail-inner,.service-detail-inner--reverse { min-height:0; padding-top:88px; padding-bottom:88px; }
+.section-heading h2,.values-heading h2,.message-grid h2,.story-copy h2,.service-detail-copy h2,.contact-intro h2,.policy-inner>h2 { font-size:clamp(1.9rem,2.5vw,2.35rem); }
+.message-body,.story-copy,.service-lead,.contact-intro>p:not(.section-label),.policy-list p,.case-summary dd,.profile-list dd,.access-copy p { font-size:var(--subpage-body); line-height:1.82; }
+.belief>p:last-child,.values-grid p,.business-grid p,.case-list-card p,.news-row p,.service-detail-copy li,.contact-intro li,.policy-list ul { font-size:var(--subpage-copy); line-height:1.75; }
+.values-grid h3,.business-grid h3 { font-size:1.2rem; }
+.case-list-card h3 { font-size:1.35rem; }
+.news-row h3 { font-size:1.12rem; }
+.service-detail-copy li { min-height:51px; }
+.case-summary dt,.news-label,.case-meta,.profile-list dt { font-size:.84rem; }
+@media (max-width:767px) {
+  :root { --subpage-body:1rem; --subpage-copy:.94rem; --subpage-section-space:72px; }
+  .breadcrumb { font-size:.8rem; }
+  .page-kicker,.section-label { font-size:.76rem; }
+  .page-hero-inner,.company-hero-inner,.cases-hero-inner,.news-hero-inner,.contact-hero-inner,.privacy-hero-inner { padding-top:50px; padding-bottom:48px; }
+  .page-hero h1,.company-hero h1,.cases-hero h1,.news-hero h1,.contact-hero h1,.privacy-hero h1 { font-size:clamp(2rem,9vw,2.25rem); }
+  .page-hero-inner>p:not(.page-kicker),.company-hero p:not(.page-kicker),.cases-hero p:not(.page-kicker),.news-hero p:not(.page-kicker),.contact-hero p:not(.page-kicker),.privacy-hero p:not(.page-kicker) { font-size:1rem; }
+  .company-section,.case-list-section,.news-list-section,.contact-main,.policy-inner { padding-top:72px; padding-bottom:76px; }
+  .service-detail-inner,.service-detail-inner--reverse { padding-top:72px; padding-bottom:72px; }
+  .section-heading h2,.values-heading h2,.message-grid h2,.story-copy h2,.service-detail-copy h2,.contact-intro h2,.policy-inner>h2 { font-size:1.85rem; }
+  .case-list-card h3 { font-size:1.12rem; }
+  .news-row h3 { font-size:1rem; }
+}
